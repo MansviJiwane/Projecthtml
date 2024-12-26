@@ -1,0 +1,395 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header Section */
+.hero { 
+  background-image: url('https://static.vecteezy.com/system/resources/previews/034/218/488/non_2x/cozy-hotel-villa-on-the-seashore-with-palm-trees-at-sunset-generative-ai-free-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  height: 90vh;
+}
+.navbar img{ 
+  width: 88px;
+  height: 70px;
+  border-radius: 50%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-left: 400px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  gap: 70px;
+  margin-left: 30px;
+  font-family: cursive;
+}
+
+.signup-btn {
+  background-color: darkslateblue;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-sizing: 60px;
+  border-radius: 20px;
+  font-family: cursive;
+}
+
+.search-fields {
+  display: flex;
+  gap: 0.5rem;
+  font-size: large;
+}
+
+.search-fields input {
+  padding: 0.8rem;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+.search-btn {
+  position: relative;
+  z-index: 1;
+  color: white;
+  border: none;
+  font-family: cursive;
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0.8rem;
+  background-color: #c8daec;
+}
+
+
+
+
+/* Highlights Section */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+a {
+  color: #0c0c0c;
+  text-decoration: none;
+}
+
+.highlight h3 {
+  font-size: 2rem;
+  color: #1a4069;
+}
+
+.highlight p {
+  color: #0c0a0a;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Featured Homes */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.search-fields select {
+  padding: 15px;
+  font-family: cursive;
+  font-size: medium;
+  border-radius: 10px;
+}
+.search-container button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 9px;
+  background-color: rgb(159, 209, 233);
+  font-size: large;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #c4d7f0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.menu .active {
+  color: #87b3e2;
+  font-weight: bold;
+}
+
+.featured-homes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.house h2 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: beige;
+}
+.home-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 22%;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+}
+
+.home-card img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  padding: 10px;
+  text-align: center;
+}
+
+.details h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.details p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Reviews Section */
+.reviews-section {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(245, 244, 244);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e91e63;
+}
+
+.section-title span {
+  color: rgb(238, 153, 17);
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.stars {
+  color: #fbc02d;
+  font-size: 1.2rem;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 15px 0;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviewer-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.reviewer-role {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Responsive Design */
+@media (max-width:720px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links {
+      margin-left: 0;
+      justify-content: center;
+  }
+
+  .nav-links a {
+      margin-left: 0;
+      font-size: 1rem;
+  }
+
+  .hero {
+      height: 70vh;
+  }
+
+  .hero-content {
+      font-size: 1.5rem;
+  }
+
+  .search-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .search-fields {
+      width: 100%;
+  }
+
+  .highlight h3 {
+      font-size: 1.5rem;
+  }
+
+  .home-card {
+      width: 45%; /* More responsive width */
+      margin-bottom: 20px;
+  }
+
+  .featured-homes {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .reviews-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .review-card {
+      width: 80%; /* Larger cards on mobile */
+  }
+  /* Footer */
+  footer {
+    background-color:beige;
+    padding: 20px 40px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #007BFF;
+  }
+  
+}
