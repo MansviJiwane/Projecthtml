@@ -1,0 +1,131 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://wallpaperdelight.com/wp-content/uploads/2024/06/Minimalist-wallpaper-featuring-a-lone-delicate-flower-in-soft-pastel-tones-against-a-pure-white-backdrop-exuding-a-serene-and-sophisticated-ambiance.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.contact-form {
+    flex: 1;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #00c4cc;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #009ea6;
+}
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="info-item">
+                <span class="icon">🏠</span>
+                <p>4671 Sugar Camp Road, Owatonna, Minnesota, 55060</p>
+            </div>
+            <div class="info-item">
+                <span class="icon">📞</span>
+                <p>571-457-2321</p>
+            </div>
+            <div class="info-item">
+                <span class="icon">✉</span>
+                <p>mansvijiwane@mfano.ga</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form>
+                <h2>Send Message</h2>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Type your Message..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
