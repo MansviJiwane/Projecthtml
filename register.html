@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up page</title>
+    <style>
+      body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-image: url('https://mediawtravel.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2018/02/30063501/Background-Image-Signup-Page.jpg');
+    }
+    form {
+      width: 400px;
+      padding: 10px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    label{
+      font-family: cursive;
+      margin-left: 20px;
+      font-size: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: rgb(122, 163, 252);
+      font-family:'Times New Roman', Times, serif;
+    }
+    h3{
+      text-align: center;
+      color: rgb(70, 112, 248);
+    }
+    input {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #f2f2f5;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.4rem;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    a {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+      color: #3835f0;
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <form  class="holder" ><h2>Sign Up</h2>
+            <label for="username">
+                Username
+                <div class="inputholder"><i class="fa-solid fa-user"></i><input id="username" type="text" class="info" placeholder="Enter your username" required id="username"></div>
+            </label>
+            
+            <label for="email">
+                Email
+                <div class="inputholder"><i class="fa-solid fa-at"></i><input id="email" type="email" class="info"  placeholder="Enter your email address" required id="email"></div>
+            </label>
+
+            <label for="password">
+                Create Password
+                <div class="inputholder"><i class="fa-solid fa-lock"></i><input type="password" class="info" required placeholder="Enter your password" id="password"></div>
+            </label>
+            <label for="repassword">
+              Confirm Password
+               <div class="inputholder"><i class="fa-solid fa-lock"></i><input type="password" class="info"  required placeholder="Re-Enter password" id="repassword"></div>
+           </label>
+            <button id="signin" type="submit">Sign up</button>
+            <h3>Already have a account ?<a href="index.html">Login</a></h3>
+              
+        </form>
+    </main>
+    <script>
+      document.querySelector('.holder').addEventListener('submit', function (e) {
+        e.preventDefault();
+        console.log("Form submission prevented");
+        const name = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const repss = document.getElementById('repassword').value;
+        if(password!==repss){
+            alert("invalid captch !");
+            return;
+        }
+        const user={
+            Name:name,
+            Email:email,
+            Password:password
+        };
+        localStorage.setItem(name,password);
+        console.log("User data saved:", user);
+        alert("your account is created successfully");
+        window.location.href = 'index.html';
+});
+    </script>
+</body>
+</html>    
