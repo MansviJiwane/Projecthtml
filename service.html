@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Services Section */
+        .services {
+            background: #f8f9fa;
+            padding: 2rem;
+            background-image: url('https://cdn.clippingpath.in/wp-content/uploads/2023/07/6.-Different-wild-flowers-on-paper-background.webp');
+        }
+
+        h2, h1 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            text-align: center;
+            font-family: cursive;
+        }
+
+        /* Service Container */
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;  /* Allow wrapping of elements on smaller screens */
+        }
+
+        .service {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 1rem; /* Adding spacing between service blocks */
+        }
+
+        /* Mobile Responsive Adjustments */
+        @media (max-width: 768px) {
+            .service-container {
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .service {
+                width: 45%; /* Adjust width on smaller screens */
+            }
+
+            /* Reduce padding for mobile */
+            .services {
+                padding: 1rem;
+            }
+
+            /* Adjust font size for better readability on mobile */
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service {
+                width: 90%; /* Make services full width on very small screens */
+                margin: 0 auto;
+            }
+
+            .services {
+                padding: 0.5rem; /* Further reduce padding for small screens */
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            /* Adjust the learn-more button for small screens */
+            .learn-more {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Services Section */
+        .services-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .services-section h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .services-section p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .learn-more {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #00cccc;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 10%;
+        }
+
+        .learn-more:hover {
+            background-color: #008b8b;
+        }
+        .learn{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Why Choose Us -->
+    <section class="services">
+        <h2>Why Choose Us !!</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Tax Advantage</h3>
+                <p>Leverage tax benefits for buying a home.</p>
+            </div>
+            <div class="service">
+                <h3>Property Insurance</h3>
+                <p>Get secured coverage for your property.</p>
+            </div>
+            <div class="service">
+                <h3>Lowest Commission</h3>
+                <p>Save money with low commission rates.</p>
+            </div>
+        </div>
+
+        <h1>Our Services</h1>
+        <p>Consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+
+        <div class="services-container">
+            <div class="service">
+                <img src="https://png.pngtree.com/png-vector/20190330/ourlarge/pngtree-vector-strategy-icon-png-image_894753.jpg" width="auto" alt="Strategy Icon">
+                <h3>Strategy</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="service">
+                <img src="https://icon-library.com/images/brand-icon-png/brand-icon-png-2.jpg" alt="Branding Icon">
+                <h3>Branding</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="service">
+                <img src="https://static.vecteezy.com/system/resources/previews/031/448/053/non_2x/web-development-icon-vector.jpg" alt="Development Icon">
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="service">
+                <img src="https://www.shareicon.net/data/2015/11/02/666006_design_512x512.png" alt="Web Design Icon">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/51/e2/ff/51e2ff6f08817a661b3eaf8d0a45d1e1.jpg" alt="Social Media Icon">
+                <h3>Social Media</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="service">
+                <img src="https://img.freepik.com/premium-vector/ecommerce-minimal-vector-line-icon-3d-button-isolated-black-background-premium-vector_570929-1053.jpg" alt="Ecommerce Icon">
+                <h3>Ecommerce</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+        </div>
+
+        <a href="about.html" class="learn-more">Learn More</a>
+    
+    </section>
+</body>
+</html>
