@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Checkout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f6fa;
+      gap: 10px;
+    }
+
+    .checkout-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      background-image: url('https://img.freepik.com/free-photo/flat-lay-frame-with-white-flowers-background_23-2148427792.jpg');
+    }
+
+    .checkout-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .checkout-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      flex: 1;
+      margin: 0 10px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    form input,
+    form select {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .order-summary {
+      margin-top: 10px;
+      padding: 0.8px;
+      border-radius: 3px;
+      box-sizing: 80px;
+      margin-left: 40px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #b9ecea;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e65a00;
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+      .checkout-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      button {
+        font-size: 1.2rem;
+      }
+
+      .order-summary {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .checkout-container {
+        padding: 15px;
+      }
+
+      .logo {
+        height: 40px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .order-summary h3,
+      .order-summary p {
+        font-size: 0.9rem;
+      }
+
+      form input,
+      form select {
+        padding: 8px;
+        font-size: 0.9rem;
+      }
+
+      button {
+        padding: 12px;
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="checkout-container">
+    <header class="checkout-header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7XPqLr7RGNMO-KzJ9TnLceMWI1Ijlpj4vO2Em4OMe0QLSOa-StIB3L-5yeM6sHfpt504&usqp=CAU" width="100px" height="160px" alt="Bellroy Logo" class="logo">
+      <h1>SECURE CHECKOUT</h1>
+    </header>
+    <div class="checkout-content">
+      <div class="section review-order">
+        <h2>1. Review Your Order</h2>
+        <p><strong>The Wild Creek House</strong></p>
+        <p>3 BHK</p>
+        <p>With swimming pool, garden, parking and gym!!</p>
+        <p>Security 24/7</p>
+      </div>
+      <div class="section delivery-address">
+        <h2>2. Delivery Address</h2>
+        <form>
+          <input type="email" placeholder="Email address" required>
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Last name" required>
+          <input type="tel" placeholder="Telephone" required>
+          <input type="text" placeholder="Address" required>
+          <input type="text" placeholder="Suburb/town" required>
+          <select required>
+            <option>Kerala</option>
+            <option>Kullu Manali</option>
+            <option>Kashmir</option>
+          </select>
+          <input type="text" placeholder="Postcode" required>
+          <input type="text" placeholder="Country" required>
+          <label><input type="checkbox"> Same billing address</label>
+        </form>
+      </div>
+      <div class="section payment-method">
+        <h2>3. Select Payment Method</h2>
+        <div>
+          <label><input type="radio" name="payment"> Card</label>
+          <label><input type="radio" name="payment"> PayPal</label>
+        </div>
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <p>Tax: 14.37 CAD</p>
+          <p><strong>Total: 1,000,000</strong></p>
+          <button><a href="Final page.html" style="color: white; text-decoration: none;">PAY NOW</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
