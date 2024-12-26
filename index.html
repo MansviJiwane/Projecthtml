@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+       body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://mediawtravel.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2018/02/30063501/Background-Image-Signup-Page.jpg');
+      }
+      form {
+        width: 400px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 23px;
+        font-family: cursive, sans-serif;
+        color: rgb(76, 105, 235);
+      }
+      form{
+        font-family: cursive;
+        font-size: 1.2rem;
+      }
+      input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 1rem;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-top: 10px;
+        font-family: cursive, sans-serif;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      a {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin-top: 6px;
+        color: #0f0f0f;
+        text-decoration:none;
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      i {
+        color: rgb(21, 35, 241);
+        font-family: cursive;
+        font-size: 18px;
+      }
+      button a {
+        color: rgb(255, 252, 252);
+        font-family: cursive, sans-serif;
+        font-size: 2rem;
+      }
+    </style>
+
+</head>
+<body>
+    <main>
+        <form class="holder"><h1>WELCOME TO VISTAVILLA </h1>
+            <label for="username">
+                Username
+                <div class="inputholder"><i class="fa-solid fa-user"></i><input id="username" type="text" class="info" required placeholder="Enter your username"></div>
+            </label>
+        
+            <label for="password">
+                Password
+                <div class="inputholder"><i class="fa-solid fa-lock"></i><input id="password" type="password" class="info" required placeholder="Enter your password"></div>
+            </label>
+            <button id="signin" type="submit">Login</button>
+            <a href="register.html">Don't have an account? <i><b>Register here </b></i></a>
+          
+        </form>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.querySelector('.holder');
+
+    if (!loginForm) {
+        console.error("Login form not found");
+        return;
+    }
+
+    loginForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        
+        const username = document.getElementById('username').value;
+        const password = document.querySelector('#password').value;
+
+        const storedUser = localStorage.getItem(username);
+        if(!storedUser){
+            alert('No user data found! Please sign up first.');
+            return ;
+        }
+        if (password === storedUser) {
+            alert('Login successful!');
+            console.log('User logged in:', { username });
+            window.location.href = 'home.html';
+        }
+        
+        else{
+            alert("invalid password or username");
+        }
+    });
+});
+    </script>
+</body>
+</html>
