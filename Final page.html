@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/flowers-pattern-beige-surface_408798-3399.jpg');
+            background-size: cover; /* Ensures the background image covers the full screen */
+            background-position: center; /* Centers the background image */
+        }
+
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            color: blue;
+            font-size: 2rem; /* Makes the heading text responsive */
+        }
+
+        img {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto; /* Centers the image */
+            display: block; /* Ensures image is centered */
+            width: 100px;
+            height: 90px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(250, 208, 234);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* Ensures link text inside the button is styled like a regular button */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem; /* Adjust font size for small screens */
+            }
+
+            img {
+                width: 80px;
+                height: 70px; /* Adjust image size for small screens */
+            }
+
+            button {
+                font-size: small; /* Adjust font size for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1> Your Order Is Confirmed!!</h1>
+    <img src="https://icon-library.com/images/smile-icon-png/smile-icon-png-8.jpg" width="100px" height="90px">
+    <br><br><br>
+    <h1>Thank You For Your Order</h1>
+    <button><a href="home.html">Back To Home</a></button>
+</body>
+</html>
