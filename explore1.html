@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explore1 page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-image: url('https://wallpapers.com/images/hd/aesthetic-sunflower-background-2000-x-1333-9t57xwatck7xvszy.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 2rem 0;
+        }
+
+        .featured-homes {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+        }
+
+        .home-card {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 22%;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .home-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .home-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .home-card .details {
+            padding: 10px;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #home {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            margin: 0.5rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .shop-now {
+            background-color: #4CAF50;
+            color: rgb(250, 255, 252);
+            font-size: 18px;
+            font-family: cursive;
+        }
+
+        .add-to-cart {
+            background-color: #008CBA;
+            color: white;
+            font-size: 18px;
+            font-family: cursive;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .featured-homes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .home-card {
+                width: 80%;
+                margin: 10px 0;
+            }
+
+            button {
+                width: 90%;
+                font-size: 16px;
+            }
+
+            #tour iframe {
+                width: 100%;
+                height: 250px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem 0;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .home-card {
+                width: 90%;
+            }
+
+            button {
+                width: 100%;
+                padding: 1rem;
+                font-size: 16px;
+            }
+
+            .shop-now,
+            .add-to-cart {
+                padding: 1rem;
+            }
+
+            footer {
+                font-size: 12px;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="featured-homes">
+            <div class="home-card">
+                <img src="https://luxurystays.in/villas/AzulD/BD2.jpg" alt="The Wild Creek House">
+                <div class="details">
+                    <h3>The Wild Creek House</h3>
+                    <p>Karnataka</p>
+                    <p>₹1,000,000</p>
+                    <p>2400 sqft</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="home">
+            <h2>You Dream House Awaits</h2>
+            <p>Explore the perfect blend houses with top-notch facilities at prime locations</p>
+            <button class="shop-now"><a href="payment.html">Shop Now</a></button>
+            <button class="add-to-cart"><a href="payment.html">Add To Cart</a></button>
+        </section>
+        
+        <section id="tour">
+            <h2>Virtual Tour</h2>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/iQ8WaYVN3W4?si=s95Kkg6J_RAmCDvL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    
+        <section id="top-facilities">
+            <h2>Top Facilities</h2>
+            <ul>
+                <li>Swimming Pool</li>
+                <li>Gym</li>
+                <li>24/7 Security</li>
+                <li>Spacious Parking</li>
+            </ul>
+        </section>
+    
+        <section id="house-info">
+            <h2>House Information</h2>
+            <p>3 BHK Luxury House with 2,500 sq. ft. area, located in a prime neighborhood.</p>
+        </section>
+    
+        <section id="location">
+            <h2>Location Advantages</h2>
+            <p>Close to schools, shopping malls, hospitals, and public transportation.</p>
+            <h3>Location Reviews</h3>
+            <p>"A serene and accessible neighborhood. Highly recommended!"</p>
+        </section>
+    </header>
+
+    <footer id="contact">
+        <h2>Contact Builder</h2>
+        <p>Phone: +91 9876543210</p>
+        <p>Email: mansvijiwane@gmail.com</p>
+        <p>Address: 123 Dream Street, City Name</p>
+    </footer>
+</body>
+</html>
